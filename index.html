@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+      <script src="https://raw.githack.com/jeromeetienne/AR.js/2.0.5/aframe/build/aframe-ar.js"></script>
+    </head>
+
+    <body>
+        <a-scene embedded arjs>
+
+            <a-assets>
+                <a-asset-item id="crate-obj" src="models/12.obj"></a-asset-item>
+                <a-asset-item id="crate-mtl" src="models/12.mtl"></a-asset-item>
+            </a-assets>
+
+            <a-box position='0 0.2 0' material='opacity: 0.5;'></a-box>
+            <a-marker-camera preset='hiro'></a-marker-camera>
+        </a-scene>
+    </body>
+</html>
