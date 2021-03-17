@@ -23,7 +23,11 @@
                 <a-obj-model src="#crate-obj2" mtl="#crate-mtl2" scale="0.07 0.07 0.07" position="0 0 0"></a-obj-model>
             </a-marker>
             
-             <a-entity camera></a-entity>
+            <a-marker type='pattern' url='marker/M2.patt'>
+                <a-entity position="0 0 0" scale="0.07 0.07 0.07" gltf-model="24.glb"></a-entity>
+            </a-marker>
+            
+            <a-entity camera></a-entity>
         </a-scene>
     </body>
 </html>
